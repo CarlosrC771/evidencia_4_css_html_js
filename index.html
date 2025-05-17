@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Login y Contacto</title>
+  
+</head>
+<body>
+  <div class="container">
+    <!-- Formulario de Login -->
+    <form id="form-login">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="usuario">DNI:</label>
+        <input type="text" id="usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="clave">Clave:</label>
+        <input type="password" id="clave" required>
+      </div>
+      <button type="submit">Ingresar</button>
+      <p><strong>Integrantes:</strong></p>
+      <ul>
+        <li>Carlos Ramos - 77160047</li>
+        <li>José Ortiz - 75117634</li>
+        
+      </ul>
+    </form>
+
+    <!-- Formulario de Contacto -->
+    <form id="form-contacto">
+      <h2>Formulario de Contacto</h2>
+      <div class="form-group">
+        <label for="tipo-doc">Tipo de documento:</label>
+        <select id="tipo-doc">
+          <option value="DNI">DNI</option>
+          <option value="RUC">RUC</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="num-doc">Número de documento:</label>
+        <input type="text" id="num-doc">
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono">
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo">
+      </div>
+      <div class="form-group">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha">
+      </div>
+      <div class="form-group">
+        <label for="estado">Estado civil:</label>
+        <select id="estado">
+          <option value="Soltero">Solter@</option>
+          <option value="Casado">Casad@</option>
+        </select>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+<script src="codigo.js"></script>
+</body>
+</html>
